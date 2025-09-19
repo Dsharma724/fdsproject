@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Resume Builder</title>
+</head>
+<body>
+    <h1>Create Your Smart Resume</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Build Resume</button>
+    </form>
+</body>
+</html>
